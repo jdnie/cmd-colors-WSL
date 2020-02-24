@@ -1,0 +1,48 @@
+Windows Registry Editor Version 5.00
+
+; Modified by Andrew Reid East (andrew@andreweast.net)
+; Registry file that maps the Monokai palette to the 16 avaliable colors
+; in a Windows command prompt. Note, hex values in the table are RGB but byte
+; ordering of a DWORD is BGR, e.g. "ColorTable<##>"=dword:00<B><G><R>
+;
+; Monokai color table from http://eclipsecolorthemes.org/?view=theme&id=6093
+;
+; NR  cmd.exe      PowerShell   Sublime Name Solar Name HEX      DWORD
+; --  -------      -----------  ------------ ---------  -------  --------
+; 00  Black        Black        BG           base03     #272822  00222827
+; 01  Blue         DarkBlue     FG           base0      #F8F8F0  00F0F8F8
+; 02  Green        DarkGreen    Comment      base01     #85BB1A  001ABB85
+; 03  Aqua         DarkCyan     FG           base1      #E6DB74  0074DBE6
+; 04  Red          DarkRed      Operator     orange     #FD971F  001F97FD
+; 05  Purple       DarkMagenta  Field        violet     #AE81FF  00FF81AE
+; 06  Yellow       DarkYellow   Line Num     base00     #A5A290  0090A2A5
+; 07  White        Gray         FG           base2      #F8F8F2  00F2F8F8
+; 08  Gray         DarkGray     Select BG    base02     #A5A290  0090A2A5
+; 09  LightBlue    Blue         Method       blue       #66D9EF  00EFD966
+; 10  LightGreen   Green        String       green      #A6E22E  002EE2A6
+; 11  LightAqua    Cyan         String       cyan       #66D9EF  00EFD966
+; 12  LightRed     Red          Bracket      red        #CB064D  004D06CB
+; 13  LightPurple  Magenta      TaskTag      magenta    #F92672  007226F9
+; 14  LightYellow  Yellow       Operator     yellow     #FD971F  001F97FD
+; 15  BrightWhite  White        FG           base3      #F8F8F0  00F0F8F8
+;
+
+[HKEY_CURRENT_USER\Console]
+"ColorTable00"=dword:00222827
+"ColorTable01"=dword:00F0F8F8
+"ColorTable02"=dword:001ABB85
+"ColorTable03"=dword:0074DBE6
+"ColorTable04"=dword:001F97FD
+"ColorTable05"=dword:00FF81AE
+"ColorTable06"=dword:0090A2A5
+"ColorTable07"=dword:00F2F8F8
+"ColorTable08"=dword:0090A2A5
+"ColorTable09"=dword:00EFD966
+"ColorTable10"=dword:002EE2A6
+"ColorTable11"=dword:00EFD966
+"ColorTable12"=dword:004D06CB
+"ColorTable13"=dword:007226F9
+"ColorTable14"=dword:001F97FD
+"ColorTable15"=dword:00F0F8F8
+"ScreenColors"=dword:00000001
+"PopupColors"=dword:000000f6
